@@ -1,33 +1,107 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ===================================================================
+#                      IDE-specific files
+# ===================================================================
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IntelliJ IDEA
+.idea/
 *.iml
+*.iws
 *.ipr
+out/
 
-### NetBeans ###
+# Eclipse
+.classpath
+.project
+.settings/
+*.springBeans
+
+# Visual Studio Code
+.vscode/
+
+# NetBeans
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+.nb-gradle/
 
-### VS Code ###
-.vscode/
+
+# ===================================================================
+#                 Build tool-specific files
+# ===================================================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+build/
+# Allow committing the gradle wrapper but not the jar
+!gradle/wrapper/gradle-wrapper.jar
+
+
+# ===================================================================
+#                 General build artifacts & logs
+# ===================================================================
+
+# Compiled Java class files
+*.class
+
+# Jar, War, and Ear files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+logs/
+
+# Test reports
+/target/surefire-reports/
+/target/failsafe-reports/
+/target/site/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+
+# ===================================================================
+#                  OS-specific and temp files
+# ===================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*~
+
+
+# ===================================================================
+#                      Sensitive information
+# ===================================================================
+
+# Environment variables
+.env
+
+# Local application properties/yaml files (uncomment if you use them)
+# application-local.properties
+# application-local.yml
+# application-dev.properties
+# application-dev.yml
